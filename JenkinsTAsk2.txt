@@ -1,0 +1,123 @@
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops (master)
+$ ls -lrt
+total 102
+drwxr-xr-x 1 revat 197609     0 Aug  8 00:01 Bash-Scripting/
+-rw-r--r-- 1 revat 197609    13 Aug  8 00:03 file1txt
+-rwxr-xr-x 1 revat 197609   715 Aug 10 00:51 directory_file_operations.sh*
+drwxr-xr-x 1 revat 197609     0 Aug 10 00:51 my_directory/
+drwxr-xr-x 1 revat 197609     0 Aug 10 00:59 workspace/
+-rw-r--r-- 1 revat 197609     0 Aug 10 01:02 startup.sh
+-rw-r--r-- 1 revat 197609     0 Aug 10 01:03 cleanup.sh
+-rwxr-xr-x 1 revat 197609   968 Aug 10 01:04 cron-task.sh*
+drwxr-xr-x 1 revat 197609     0 Aug 10 01:04 build/
+-rw-r--r-- 1 revat 197609   164 Aug 13 22:23 dockerfile
+-rw-r--r-- 1 revat 197609     6 Aug 13 22:24 requirements.txt
+-rw-r--r-- 1 revat 197609  5098 Aug 13 22:26 app.py
+-rw-r--r-- 1 revat 197609   170 Aug 13 22:36 docker-node
+drwxr-xr-x 1 revat 197609     0 Aug 13 22:59 nodejs/
+-rw-r--r-- 1 revat 197609   167 Aug 19 22:16 docker-compose.yaml
+drwxr-xr-x 1 revat 197609     0 Aug 20 01:38 Docker-Task-2/
+drwxr-xr-x 1 revat 197609     0 Aug 20 03:58 Docker-Task/
+-rw-r--r-- 1 revat 197609    57 Aug 21 01:41 package.json
+-rw-r--r-- 1 revat 197609 30853 Aug 21 01:41 package-lock.json
+drwxr-xr-x 1 revat 197609     0 Aug 21 01:41 node_modules/
+drwxr-xr-x 1 revat 197609     0 Aug 21 23:41 hello-world-docker/
+drwxr-xr-x 1 revat 197609     0 Aug 22 21:23 my-git-repo/
+drwxr-xr-x 1 revat 197609     0 Sep  2 15:07 VCS_TASK/
+drwxr-xr-x 1 revat 197609     0 Sep  4 19:42 my-jenkins-project/
+drwxr-xr-x 1 revat 197609     0 Sep  4 21:29 Network-Task/
+drwxr-xr-x 1 revat 197609     0 Sep  4 22:45 my-new-project/
+drwxr-xr-x 1 revat 197609     0 Sep  4 23:53 my-jenkins-project2/
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops (master)
+$ cd my-jenkins-project2/
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-jenkins-project2 (master)
+$ ls -lrt
+total 1
+-rwxr-xr-x 1 revat 197609 12 Sep  4 23:53 build.sh*
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-jenkins-project2 (master)
+$ echo 'echo "This is an updated build script!"' >> build.sh
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-jenkins-project2 (master)
+$ git add build.sh
+warning: in the working copy of 'build.sh', LF will be replaced by CRLF the next time Git touches it
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-jenkins-project2 (master)
+$ git commit -m "Updated build script"
+[master 261c1df] Updated build script
+ 1 file changed, 1 insertion(+)
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-jenkins-project2 (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 300 bytes | 300.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Revathi-Tadela/my-jenkins-repo2.git
+   cd36563..261c1df  master -> master
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-jenkins-project2 (master)
+$ echo "This is an again updated build script!"' >> build.sh
+> ^C
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-jenkins-project2 (master)
+$ echo 'echo "This is an again updated build script!"' >> build.sh
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-jenkins-project2 (master)
+$ git add build.sh
+warning: in the working copy of 'build.sh', LF will be replaced by CRLF the next time Git touches it
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-jenkins-project2 (master)
+$ git commit -m "again Updated build script"
+[master 006c8ff] again Updated build script
+ 1 file changed, 1 insertion(+)
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-jenkins-project2 (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 309 bytes | 309.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Revathi-Tadela/my-jenkins-repo2.git
+   261c1df..006c8ff  master -> master
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-jenkins-project2 (master)
+$
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-jenkins-project2 (master)
+$ echo 'echo "This is an again again updated build script!"' >> build.sh
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-jenkins-project2 (master)
+$ git add build.sh
+warning: in the working copy of 'build.sh', LF will be replaced by CRLF the next time Git touches it
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-jenkins-project2 (master)
+$ git commit -m "again again Updated build script"
+[master 0ed3f20] again again Updated build script
+ 1 file changed, 1 insertion(+)
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-jenkins-project2 (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 293 bytes | 293.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Revathi-Tadela/my-jenkins-repo2.git
+   006c8ff..0ed3f20  master -> master
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-jenkins-project2 (master)
+$ date
+Thu, Sep  5, 2024  1:52:52 AM
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-jenkins-project2 (master)
+$
