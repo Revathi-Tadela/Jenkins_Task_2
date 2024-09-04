@@ -1,0 +1,26 @@
+Started by GitHub push by Revathi-Tadela
+Running as SYSTEM
+Building on the built-in node in workspace C:\ProgramData\Jenkins\.jenkins\workspace\MyJenkinsProject3
+The recommended git tool is: NONE
+No credentials specified
+ > C:\Program Files\Git\bin\git.exe rev-parse --resolve-git-dir C:\ProgramData\Jenkins\.jenkins\workspace\MyJenkinsProject3\.git # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/Revathi-Tadela/my-jenkins-repo2.git # timeout=10
+Fetching upstream changes from https://github.com/Revathi-Tadela/my-jenkins-repo2.git
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+ > git --version # 'git version 2.45.2.windows.1'
+ > C:\Program Files\Git\bin\git.exe fetch --tags --force --progress -- https://github.com/Revathi-Tadela/my-jenkins-repo2.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision 87e4ff823b6c161be30f7c194b604adaef74248a (refs/remotes/origin/master)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f 87e4ff823b6c161be30f7c194b604adaef74248a # timeout=10
+Commit message: "again1 again1 Updated build script"
+ > C:\Program Files\Git\bin\git.exe rev-list --no-walk 4cb8109d52d86bef34a953b78d8cd2c5dd1fb587 # timeout=10
+[MyJenkinsProject3] $ cmd /c call C:\WINDOWS\TEMP\jenkins6156967798122508569.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\MyJenkinsProject3>echo Hello from Jenkins! 
+Hello from Jenkins!
+
+C:\ProgramData\Jenkins\.jenkins\workspace\MyJenkinsProject3>exit 0 
+Sending e-mails to: tadelarevathi1989@gmail.com
+Finished: SUCCESS
